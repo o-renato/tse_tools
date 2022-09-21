@@ -72,4 +72,5 @@ SELECT * FROM filiados WHERE
 ### Exportando os resultados
 
 Para salvar os resultados de uma consulta:
+
 ![Consultando o DB](/images/tse02.png?raw=true "Consultando o DB")

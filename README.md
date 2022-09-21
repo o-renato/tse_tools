@@ -7,9 +7,9 @@ Requisitos:
 * Python 3
 * Pandas
 
-### Certifique-se de ter o Python 3 instalado
+### Certifique-se de ter o [Python 3](https://www.python.org/) instalado
 ```console
-Python -V
+python -V
 ```
 
 Deve retornar a versão do Python instalada. Exemplo: ```Python 3.10.7```
@@ -23,7 +23,11 @@ pip install pandas
 
 * Salve o *consolidador.py* em uma pasta, e crie uma subpasta chamada "planilhas".
 * Descompacte os arquivos CSV do TSE na pasta "planilhas".
-* Execute o *consolidador.py*
+* Execute o consolidador.py
+
+```console
+python consolidador.py
+```
 
 Será criado um banco de dados SQLite chamado filiados.sqlite
 

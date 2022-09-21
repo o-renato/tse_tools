@@ -61,14 +61,13 @@ Consultando múltiplos nomes simultaneamente:
 
 ```
 SELECT * FROM filiados WHERE
-	partido = "NOME DO PARTIDO"
-	AND UF = "UF"
-	AND
-	(
-		NOME LIKE "JOAO%SILVA%"
-		OR NOME LIKE "ANA%MARIA%"
-        	OR NOME LIKE "PEDRO%SANTOS%"
-	)
+    partido = "NOME DO PARTIDO"
+    AND UF = "UF"
+    AND (
+	NOME LIKE "JOAO%SILVA%"
+	OR NOME LIKE "ANA%MARIA%"
+        OR NOME LIKE "PEDRO%SANTOS%"
+    )
 ```
 ### Exportando os resultados
 

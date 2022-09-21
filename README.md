@@ -50,15 +50,15 @@ SELECT * FROM filiados WHERE partido = "NOME DO PARTIDO"
 
 Obter todos os filiados de um determinado partido em um determinado estado:
 ```
-SELECT * FROM filiados WHERE partido = "NOME DO PARTIDO" AND UF = "SP"
+SELECT * FROM filiados WHERE partido = "NOME DO PARTIDO" AND uf = "UF"
 ```
 
 Obter todos os filiados com um nome parcial, de um determinado partido e em um determinado estado:
 ```
 SELECT * FROM filiados WHERE
     partido = "NOME DO PARTIDO"
-    AND UF = "UF"
-    AND NOME LIKE "JOAO%SILVA%"
+    AND uf = "UF"
+    AND nome LIKE "JOAO%SILVA%"
 ```
 
 Consultando múltiplos nomes simultaneamente:
@@ -66,11 +66,11 @@ Consultando múltiplos nomes simultaneamente:
 ```
 SELECT * FROM filiados WHERE
     partido = "NOME DO PARTIDO"
-    AND UF = "UF"
+    AND uf = "UF"
     AND (
-	NOME LIKE "JOAO%SILVA%"
-	OR NOME LIKE "ANA%MARIA%"
-        OR NOME LIKE "PEDRO%SANTOS%"
+	nome LIKE "JOAO%SILVA%"
+	OR nome LIKE "ANA%MARIA%"
+        OR nome LIKE "PEDRO%SANTOS%"
     )
 ```
 ### Exportando os resultados
